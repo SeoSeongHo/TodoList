@@ -1,14 +1,16 @@
-package com.todo.services.todo
+package com.todo.services.todoRegister
 
 import com.todo.dto.TodoDto
 import com.todo.dto.mapper.TodoDtoMapper
-import com.todo.model.TodoItem
-import com.todo.repository.TodoRepository
+import com.todo.entity.TodoItem
+import com.todo.dao.TodoRepository
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Service
 
-class TodoRegisterServiceImpl (
+@Service
+class TodoRegisterService (
         @Autowired val todoRepository: TodoRepository
-) : TodoRegisterService {
+) : ITodoRegisterService {
     override fun getTodo(id : Long): TodoDto {
         val todo = todoRepository.findById(id)
         if(todo.isPresent){

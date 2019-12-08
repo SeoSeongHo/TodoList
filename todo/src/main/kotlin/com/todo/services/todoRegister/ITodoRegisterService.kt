@@ -1,9 +1,8 @@
-package com.todo.services.todo
+package com.todo.services.todoRegister
 
 import com.todo.dto.TodoDto
-import com.todo.model.TodoItem
 
-interface TodoRegisterService {
+interface ITodoRegisterService {
     fun getTodoList() : List<TodoDto>
     fun getTodo(id : Long) : TodoDto
     fun postTodo(todoDto: TodoDto) : TodoDto
