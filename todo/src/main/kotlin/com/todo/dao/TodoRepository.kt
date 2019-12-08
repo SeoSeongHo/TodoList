@@ -1,6 +1,6 @@
-package com.todo.repository
+package com.todo.dao
 
-import com.todo.model.TodoItem
+import com.todo.entity.TodoItem
 import org.springframework.data.jpa.repository.JpaRepository
 
 interface TodoRepository : JpaRepository<TodoItem, Long>
