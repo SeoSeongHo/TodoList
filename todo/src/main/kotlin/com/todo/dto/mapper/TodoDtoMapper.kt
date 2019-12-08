@@ -1,7 +1,7 @@
 package com.todo.dto.mapper
 
 import com.todo.dto.TodoDto
-import com.todo.model.TodoItem
+import com.todo.entity.TodoItem
 
 class TodoDtoMapper(
 
