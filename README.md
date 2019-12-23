@@ -10,7 +10,7 @@ Kotlin & Spring boot 연습을 위한 CRUD 기반 TodoList 프로젝트
 
 ### DAO
 
-![img](images/dao.PNG)
+![img](images/dao.png)
 
 Inmemory DB 를 이용한, Todo DB 에 접근하는 Layer 로, 비즈니스 작업이 구축된 Service Layer 로부터 Dto 를 받아,
 Entity 로 변경 후, DB 에 접근
@@ -21,7 +21,7 @@ Entity 로 변경 후, DB 에 접근
 
 ### DTO
 
-![img](images/dto.PNG)
+![img](images/dto.png)
 
 Contoller -> Service, Service -> DAO, DAO -> Service 등 Layer 간 데이터 교환이 이루어질 때, 사용되는 객체로,
 
@@ -31,7 +31,7 @@ Contoller -> Service, Service -> DAO, DAO -> Service 등 Layer 간 데이터 교
 
 ### Entity
 
-![img](images/entity.PNG)
+![img](images/entity.png)
 
 실제 DB 스키마와 매칭되는 객체로, Service Layer 로부터 받은 DTO Format 을 Mapper 를 통해 Entity 로 변경 후, DB 와 접근한다.
 
